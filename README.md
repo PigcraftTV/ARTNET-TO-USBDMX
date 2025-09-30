@@ -66,11 +66,7 @@ If you only encounter issues with the USBDMX to Artnet function, you might need 
 
 If the Script says, that it cant open the interface, try to run it as root.
 
-How it Works:
 
-When the interface is connected and the script is started, the device is automatically detected and switched into Mode 6:
-
-PC Out → DMX Out
 
 DMX In → PC In
 
