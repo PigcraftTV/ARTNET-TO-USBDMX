@@ -42,6 +42,89 @@ class FX5Interface:
 
 fx5 = FX5Interface(SERIAL_NUMBER)
 fx5.open()
+# ASCII-Art Buchstaben
+letters = {
+    "A": ["  A  ",
+          " A A ",
+          "AAAAA",
+          "A   A",
+          "A   A"],
+    "R": ["RRRR ",
+          "R   R",
+          "RRRR ",
+          "R R  ",
+          "R  RR"],
+    "T": ["TTTTT",
+          "  T  ",
+          "  T  ",
+          "  T  ",
+          "  T  "],
+    "N": ["N   N",
+          "NN  N",
+          "N N N",
+          "N  NN",
+          "N   N"],
+    "E": ["EEEEE",
+          "E    ",
+          "EEE  ",
+          "E    ",
+          "EEEEE"],
+    "U": ["U   U",
+          "U   U",
+          "U   U",
+          "U   U",
+          " UUU "],
+    "S": [" SSS ",
+          "S    ",
+          " SSS ",
+          "    S",
+          "SSSS "],
+    "D": ["DDDD ",
+          "D   D",
+          "D   D",
+          "D   D",
+          "DDDD "],
+    "M": ["M   M",
+          "MM MM",
+          "M M M",
+          "M   M",
+          "M   M"],
+    "X": ["X   X",
+          " X X ",
+          "  X  ",
+          " X X ",
+          "X   X"],
+    "<": ["  <  ",
+          " <   ",
+          "<    ",
+          " <   ",
+          "  <  "],
+    ">": ["  >  ",
+          "   > ",
+          "    >",
+          "   > ",
+          "  >  "],
+    "-": ["     ",
+          "-----",
+          "     ",
+          "     ",
+          "     "],
+    " ": ["     ",
+          "     ",
+          "     ",
+          "     ",
+          "     "]
+}
+
+text = "ARTNET <-> USBDMX"
+
+# Ausgabe Zeile für Zeile
+for i in range(5):
+    line = ""
+    for char in text:
+        line += letters.get(char.upper(), ["     "])[i] + "  "
+    print(line)
+
 print(f"[{datetime.now()}] Interface {SERIAL_NUMBER.decode()} opened, DMX-Out ready")
 
 UDP_IP = ""
@@ -99,3 +182,4 @@ while True:
         print(f"[{datetime.now()}] DMX In -> Artnet sent ({len(dmx_in_bytes)} channels)")
 
     time.sleep(0.01)
+#Code with Copyright by PigcraftTV 2025
