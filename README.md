@@ -12,7 +12,49 @@ An external power supply for the interface if your machine’s USB ports do not 
 
 Setup:
 
-Step 1: Download the Repository e.g with git clone: git clone 
+Step 1: Download the Repository e.g with git clone: git clone https://github.com/PigcraftTV/ARTNET-TO-USBDMX.git
+
+Steo 2: Go into the Directory: cd ARTNET-TO-USBDMX
+
+Step 3: Connect your Interface to the Machine
+
+Step 4: Get the Serial Number of your Interface with this command: dmesg | grep -i usb
+
+     The Output should look something like this:
+     
+     Couldn't open device, some information will be missing
+     
+     Couldn't open device, some information will be missing
+     
+     Couldn't open device, some information will be missing
+     
+     Couldn't open device, some information will be missing
+     
+     Couldn't open device, some information will be missing
+     
+       iManufacturer           1 Digital Enlightenment
+       
+        iProduct                2 USB DMX
+        
+        iSerial                 3 0000800010011617      <--- Serial Number
+        
+        bNumConfigurations      1
+        
+        Configuration Descriptor:
+        
+          bLength                 9
+          
+Step 5: Copy the Serial Number and paste it in line 8 in the quotation marks: SERIAL_NUMBER = b"0000800010011617"
+
+Step 6: Change the so_path to your Directory.
+
+Step 7: Additionally, you can change the ArtNet Universes.
+
+Step 8: Now you can save and run the Script with python3 usbdmx-artnet.py
+
+
+
+
 
 Notes:
 
