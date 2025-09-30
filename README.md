@@ -15,13 +15,13 @@ An external power supply for the interface if your machine’s USB ports do not 
 
 # Setup:
 
-Step 1: Download the Repository e.g with git clone: git clone https://github.com/PigcraftTV/ARTNET-TO-USBDMX.git
+Step 1: Download the repository e.g with git clone: git clone https://github.com/PigcraftTV/ARTNET-TO-USBDMX.git
 
-Steo 2: Go into the Directory: cd ARTNET-TO-USBDMX
+Steo 2: Go into the directory: cd ARTNET-TO-USBDMX
 
 Step 3: Connect your Interface to the Machine
 
-Step 4: Get the Serial Number of your Interface with this command: dmesg | grep -i usb
+Step 4: Get the Serial-Number of your Interface with this command: dmesg | grep -i usb
 
      The Output should look something like this:
      
@@ -47,13 +47,13 @@ Step 4: Get the Serial Number of your Interface with this command: dmesg | grep 
         
           bLength                 9
           
-Step 5: Copy the Serial Number and paste it in line 8 in the quotation marks: SERIAL_NUMBER = b"0000800010011617"
+Step 5: Copy the Serial-Number and paste it in line 8 in the quotation marks: SERIAL_NUMBER = b"0000800010011617"
 
-Step 6: Change the so_path to your Directory.
+Step 6: Change the so_path to your directory.
 
 Step 7: Additionally, you can change the ArtNet Universes.
 
-Step 8: Now you can save and run the Script with python3 usbdmx-artnet.py
+Step 8: Now you can save and run the script with python3 usbdmx-artnet.py
 
 
 
@@ -68,6 +68,8 @@ The script generally works without installing additional dependencies.
 If you only encounter issues with the USBDMX to Artnet function, you might need to change the Broadcast Setting in your Switch or Router. Otherwise you can directly put in your Destination IP for Unicast.
 
 If the Script says, that it cant open the interface, try to run it as root.
+
+If you have problems or other issues, you can create a tab under "Issues" or send me an EMail: PigcraftTV50@gmail.com
 
 
 Additionally, parameters such as operating mode or the Art-Net universe can be customized directly within the source code.
