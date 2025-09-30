@@ -64,6 +64,8 @@ Problem Solving:
 
 If you only encounter issues with the USBDMX to Artnet function, you might need to change the Broadcast Setting in your Switch or Router. Otherwise you can directly put in your Destination IP for Unicast.
 
+If the Script says, that it cant open the interface, try to run it as root.
+
 How it Works:
 
 When the interface is connected and the script is started, the device is automatically detected and switched into Mode 6:
