@@ -14,7 +14,9 @@ Notes:
 
 The script generally works without installing additional dependencies.
 
+Problem Solving:
 If you encounter issues, you may need to adjust the path to the usbdmx.so library.
+If you only encounter issues, with the USBDMX to Artnet function, you might need to change the Broadcast Setting in your Switch or Router. Otherwise you can directly put in your Destination IP for Unicast.
 
 How it Works:
 
