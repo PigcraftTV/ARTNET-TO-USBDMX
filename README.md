@@ -1,7 +1,7 @@
 # ARTNET-TO-USBDMX
 This Python program allows you to use the Digital Enlightenment FX5-USBDMX interface as an Art-Net node.
 
-Requirements:
+# Requirements:
 
 A Linux-based system (e.g., Raspberry Pi) to run the script
 
@@ -10,7 +10,7 @@ The Digital Enlightenment FX5-USBDMX interface (other devices are not supported)
 An external power supply for the interface if your machine’s USB ports do not provide sufficient power
 (recommended: 9–12 V PSU)
 
-Setup:
+# Setup:
 
 Step 1: Download the Repository e.g with git clone: git clone https://github.com/PigcraftTV/ARTNET-TO-USBDMX.git
 
@@ -56,11 +56,11 @@ Step 8: Now you can save and run the Script with python3 usbdmx-artnet.py
 
 
 
-Notes:
+# Notes:
 
 The script generally works without installing additional dependencies.
 
-Problem Solving:
+# Problem Solving:
 
 If you only encounter issues with the USBDMX to Artnet function, you might need to change the Broadcast Setting in your Switch or Router. Otherwise you can directly put in your Destination IP for Unicast.
 
