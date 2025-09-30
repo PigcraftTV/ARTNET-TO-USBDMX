@@ -113,7 +113,20 @@ letters = {
           "     ",
           "     ",
           "     ",
-          "     "]
+          "     "],
+    "/": ["    /",
+          "   / ",
+          "  /  ",
+          " /   ",
+          "/    "],
+    "B": [
+          "BBBB ",
+          "B   B",
+          "BBBB ",
+          "B   B",
+          "BBBB "]
+
+    
 }
 
 text = "ARTNET <-> USBDMX"
@@ -122,8 +135,10 @@ text = "ARTNET <-> USBDMX"
 for i in range(5):
     line = ""
     for char in text:
-        line += letters.get(char.upper(), ["     "])[i] + "  "
+        # Falls ein Zeichen fehlt, 5 leere Zeilen verwenden
+        line += letters.get(char.upper(), ["     "]*5)[i] + "  "
     print(line)
+
 
 print(f"[{datetime.now()}] Interface {SERIAL_NUMBER.decode()} opened, DMX-Out ready")
 
@@ -183,3 +198,4 @@ while True:
 
     time.sleep(0.01)
 #Code with Copyright by PigcraftTV 2025
+
