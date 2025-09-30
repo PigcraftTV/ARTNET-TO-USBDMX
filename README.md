@@ -1,6 +1,9 @@
 # ARTNET-TO-USBDMX
 This Python program allows you to use the Digital Enlightenment FX5-USBDMX interface as an Art-Net node.
 
+![Picture not found](picture.png)
+
+
 # Requirements:
 
 A Linux-based system (e.g., Raspberry Pi) to run the script
