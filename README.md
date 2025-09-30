@@ -10,6 +10,10 @@ The Digital Enlightenment FX5-USBDMX interface (other devices are not supported)
 An external power supply for the interface if your machine’s USB ports do not provide sufficient power
 (recommended: 9–12 V PSU)
 
+Setup:
+
+Step 1: Download the Repository e.g with git clone: git clone 
+
 Notes:
 
 The script generally works without installing additional dependencies.
@@ -29,3 +33,4 @@ PC Out → DMX Out
 DMX In → PC In
 
 Additionally, parameters such as operating mode or the Art-Net universe can be customized directly within the source code.
+
