@@ -67,8 +67,5 @@ If you only encounter issues with the USBDMX to Artnet function, you might need 
 If the Script says, that it cant open the interface, try to run it as root.
 
 
-
-DMX In → PC In
-
 Additionally, parameters such as operating mode or the Art-Net universe can be customized directly within the source code.
 
