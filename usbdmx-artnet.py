@@ -42,7 +42,6 @@ class FX5Interface:
 
 fx5 = FX5Interface(SERIAL_NUMBER)
 fx5.open()
-# ASCII-Art Buchstaben
 letters = {
     "A": ["  A  ",
           " A A ",
@@ -131,7 +130,6 @@ letters = {
 
 text = "ARTNET <-> USBDMX"
 
-# Ausgabe Zeile für Zeile
 for i in range(5):
     line = ""
     for char in text:
@@ -139,7 +137,7 @@ for i in range(5):
         line += letters.get(char.upper(), ["     "]*5)[i] + "  "
     print(line)
 
-
+print("Artnet <-> USBDMX by PigcraftTV")
 print(f"[{datetime.now()}] Interface {SERIAL_NUMBER.decode()} opened, DMX-Out ready")
 
 UDP_IP = ""
@@ -198,4 +196,5 @@ while True:
 
     time.sleep(0.01)
 #Code with Copyright by PigcraftTV 2025
+
 
